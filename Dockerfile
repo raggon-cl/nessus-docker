@@ -19,7 +19,7 @@ LABEL description="Tenable Nessus containerizado para INY1105"
 # esperando input del usuario durante el build.
 # ------------------------------------------------------------
 ENV DEBIAN_FRONTEND=noninteractive
-ENV NESSUS_VERSION="10.7.4"
+ENV NESSUS_VERSION="10.12.0"
 ENV NESSUS_PACKAGE="Nessus-${NESSUS_VERSION}-debian10_amd64.deb"
 
 # ------------------------------------------------------------
