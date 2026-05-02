@@ -19,10 +19,18 @@ Despliegue containerizado de Tenable Nessus con estrategia de persistencia dual.
 - 2 GB RAM disponible
 - 10 GB espacio en disco (plugins de Nessus ocupan varios GB)
 
+## Imagen en Docker Hub
+
+```bash
+docker pull raggon/nessus-iny1105:1.0.0
+```
+
+https://hub.docker.com/r/raggon/nessus-iny1105
+
 ## Despliegue rápido
 
 ```bash
-git clone https://github.com/TU-USUARIO/nessus-docker.git
+git clone https://github.com/raggon-cl/nessus-docker.git
 cd nessus-docker
 mkdir -p logs
 docker compose up -d
@@ -80,10 +88,10 @@ docker compose down -v
 ## Publicar en Docker Hub
 
 ```bash
-docker tag nessus-docker-nessus:latest TU-USUARIO/nessus-iny1105:1.0.0
-docker tag nessus-docker-nessus:latest TU-USUARIO/nessus-iny1105:latest
-docker push TU-USUARIO/nessus-iny1105:1.0.0
-docker push TU-USUARIO/nessus-iny1105:latest
+docker tag nessus-docker-nessus:latest raggon/nessus-iny1105:1.0.0
+docker tag nessus-docker-nessus:latest raggon/nessus-iny1105:latest
+docker push raggon/nessus-iny1105:1.0.0
+docker push raggon/nessus-iny1105:latest
 ```
 
 ---
